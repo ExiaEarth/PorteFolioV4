@@ -1,0 +1,14 @@
+{
+  "name": "portefoliov4",
+  "version": "1.0.0",
+  "description": "Version 4 du portefolio crée le 30/03/23",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marc Lemer",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}
