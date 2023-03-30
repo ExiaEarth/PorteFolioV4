@@ -1,15 +1,41 @@
-*, ::after::before {
+*, ::after, ::before {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 *, :root {
-  --colorText:red;
+  --colorText:rgb(255, 255, 255);
+  --colorBackground:black;
 }
 
-.container p {
+body {
+  background-color: var(--colorBackground);
   color: var(--colorText);
+  height: 100%;
+  width: 100%;
+}
+body .container {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+}
+body .container header {
+  border: 1px solid rgb(255, 0, 234);
+  height: 100%;
+  width: 10vw;
+  z-index: 1;
+  transform: translateX(109rem);
+}
+body .container header #navigation {
+  border: 1px solid rgb(255, 238, 0);
+}
+body .container main {
+  border: 1px solid rgb(0, 255, 204);
+  height: 100vh;
+  width: 110vw;
+  transform: translate(-10rem);
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
