@@ -15,26 +15,68 @@ body{
     height: 100%;
     width: 100%;
     .container{
-        border: 1px solid red;
+        // border: 1px solid red;
         height: 100vh;
         display: flex;
         header{
-            border: 1px solid rgb(255, 0, 234);
+            // border: 1px solid rgb(38, 255, 0);
             height: 100%;
             width: 10vw;
-            z-index: 1;
-            transform: translateX(109rem);
+            text-transform: uppercase;
             #navigation{
-                border: 1px solid rgb(255, 238, 0);
+                border: 1px solid rgb(255, 0, 0);
+                margin-top: 10rem;
+                height: 50%;
+                border-radius: 20%;
+                ul{
+                    height: 100%;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        border: 1px solid rgb(0, 255, 221);
+                        height: 100%;
+                        text-align: center;
+                        // list-style: none;
+                        // text-decoration: none;
+
+                        a{
+                            justify-content: center;
+                            border: 1px solid rgb(0, 255, 221);
+                            border-radius: 20%;
+                            text-decoration: none;
+                            color: var(--colorText);
+                            .titleNavBar{
+                                visibility: hidden;
+
+                            }
+                        }
+                        :hover{
+                            a{
+                            .titleNavBar{
+                                visibility: visible;
+                                color: red;
+                            }
+
+                            }
+                        }
+                    }
+                }
             }
         }
         main{
-        border: 1px solid rgb(0, 255, 204);
+        // border: 1px solid rgb(0, 255, 204);
         height: 100vh;
-        width: 110vw;
-        transform: translate(-10rem);
+        width: 100vw;
+        // transform: translate(-10rem);
         z-index: 0;
-            
+        overflow-y: scroll;
+        
+        .formaDef{
+            // border: 1px solid red;
+            height: 100%;
+            width: 100%;
+        }
         }
     }
 }

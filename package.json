@@ -9,6 +9,10 @@
   "author": "Marc Lemer",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.15",
     "sass": "^1.60.0"
   }
 }
