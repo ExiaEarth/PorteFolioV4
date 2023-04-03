@@ -6,6 +6,8 @@
 *,:root{
     --colorText:rgb(255, 255, 255);
     --colorBackground:black;
+    --colorbtn:red;
+    --hoverBTn:aquamarine;
 }
 
 
@@ -14,6 +16,7 @@ body{
     color: var(--colorText);
     height: 100%;
     width: 100%;
+    color: white;
     .container{
         // border: 1px solid red;
         height: 100vh;
@@ -24,40 +27,58 @@ body{
             width: 10vw;
             text-transform: uppercase;
             #navigation{
-                border: 1px solid rgb(255, 0, 0);
                 margin-top: 10rem;
                 height: 50%;
-                border-radius: 20%;
+                border-radius: 80px;
+                text-align: center;
+                display: flex;
                 ul{
                     height: 100%;
+                    width: 4vw;
                     list-style: none;
                     display: flex;
                     flex-direction: column;
+                    margin-left: 2rem;
+                    justify-content: space-around;
                     li{
-                        border: 1px solid rgb(0, 255, 221);
                         height: 100%;
-                        text-align: center;
-                        // list-style: none;
-                        // text-decoration: none;
-
                         a{
-                            justify-content: center;
-                            border: 1px solid rgb(0, 255, 221);
                             border-radius: 20%;
+                            height: 80%;
+                            width: 100%;
                             text-decoration: none;
-                            color: var(--colorText);
+                            color:var(--colorbtn);
+                            border: 1px solid rgb(0, 255, 221);
+                            display: flex;                            
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: 5px 5px 8px red;
+                            .material-symbols-outlined{
+                                text-align: center;
+                                font-size: 1.5rem;
+                            }
                             .titleNavBar{
+                                transform: translateY(-50%);
+                                position: absolute;
+                                left: 6.8rem;
+                                background-color: aqua;
+                                border-radius: 0.3rem;
+                                transition: 0.5s;
+                                opacity: 0;
                                 visibility: hidden;
-
                             }
                         }
-                        :hover{
-                            a{
+
+                    }
+                    :hover{
+                        a{
+                        background-color: var(--hoverBTn);
+
                             .titleNavBar{
                                 visibility: visible;
-                                color: red;
-                            }
-
+                                opacity: 1;
+                                color: black;
+                                transform: translateX(1.5rem)translateX(3.1rem);
                             }
                         }
                     }
@@ -65,18 +86,35 @@ body{
             }
         }
         main{
-        // border: 1px solid rgb(0, 255, 204);
-        height: 100vh;
-        width: 100vw;
-        // transform: translate(-10rem);
-        z-index: 0;
-        overflow-y: scroll;
-        
-        .formaDef{
-            // border: 1px solid red;
-            height: 100%;
-            width: 100%;
-        }
+            height: 100vh;
+            width: 100vw;
+            z-index: 0;
+            overflow-y: scroll;
+            .formaDef{
+                border: 1px solid red;
+                height: 100%;
+                width: 100%;
+            }
+            #Accueil{
+                height: 100%;
+                width: 100%;
+
+            }
+            #Present{
+                height: 100%;
+                width: 100%;
+                .imgProfil{
+                    border: 1px solid greenyellow;
+                    height: 10%;
+                    width: 10%;
+                    display: inline;
+                }
+                .textProfil{
+                    border: 1px solid rgb(47, 255, 224);
+                    height: 50%;
+                    width: 50%;
+                }
+            }
         }
     }
 }

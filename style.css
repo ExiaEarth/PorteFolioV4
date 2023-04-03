@@ -7,6 +7,8 @@
 *, :root {
   --colorText:rgb(255, 255, 255);
   --colorBackground:black;
+  --colorbtn:red;
+  --hoverBTn:aquamarine;
 }
 
 body {
@@ -14,6 +16,7 @@ body {
   color: var(--colorText);
   height: 100%;
   width: 100%;
+  color: white;
 }
 body .container {
   height: 100vh;
@@ -25,35 +28,58 @@ body .container header {
   text-transform: uppercase;
 }
 body .container header #navigation {
-  border: 1px solid rgb(255, 0, 0);
   margin-top: 10rem;
   height: 50%;
-  border-radius: 20%;
+  border-radius: 80px;
+  text-align: center;
+  display: flex;
 }
 body .container header #navigation ul {
   height: 100%;
+  width: 4vw;
   list-style: none;
   display: flex;
   flex-direction: column;
+  margin-left: 2rem;
+  justify-content: space-around;
 }
 body .container header #navigation ul li {
-  border: 1px solid rgb(0, 255, 221);
   height: 100%;
-  text-align: center;
 }
 body .container header #navigation ul li a {
-  justify-content: center;
-  border: 1px solid rgb(0, 255, 221);
   border-radius: 20%;
+  height: 80%;
+  width: 100%;
   text-decoration: none;
-  color: var(--colorText);
+  color: var(--colorbtn);
+  border: 1px solid rgb(0, 255, 221);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 8px red;
+}
+body .container header #navigation ul li a .material-symbols-outlined {
+  text-align: center;
+  font-size: 1.5rem;
 }
 body .container header #navigation ul li a .titleNavBar {
+  transform: translateY(-50%);
+  position: absolute;
+  left: 6.8rem;
+  background-color: aqua;
+  border-radius: 0.3rem;
+  transition: 0.5s;
+  opacity: 0;
   visibility: hidden;
 }
-body .container header #navigation ul li :hover a .titleNavBar {
+body .container header #navigation ul :hover a {
+  background-color: var(--hoverBTn);
+}
+body .container header #navigation ul :hover a .titleNavBar {
   visibility: visible;
-  color: red;
+  opacity: 1;
+  color: black;
+  transform: translateX(1.5rem) translateX(3.1rem);
 }
 body .container main {
   height: 100vh;
@@ -62,8 +88,28 @@ body .container main {
   overflow-y: scroll;
 }
 body .container main .formaDef {
+  border: 1px solid red;
   height: 100%;
   width: 100%;
+}
+body .container main #Accueil {
+  height: 100%;
+  width: 100%;
+}
+body .container main #Present {
+  height: 100%;
+  width: 100%;
+}
+body .container main #Present .imgProfil {
+  border: 1px solid greenyellow;
+  height: 10%;
+  width: 10%;
+  display: inline;
+}
+body .container main #Present .textProfil {
+  border: 1px solid rgb(47, 255, 224);
+  height: 50%;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
