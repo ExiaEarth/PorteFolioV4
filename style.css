@@ -8,7 +8,8 @@
   --colorText:rgb(255, 255, 255);
   --colorBackground:black;
   --colorbtn:red;
-  --hoverBTn:aquamarine;
+  --hoverBTn:rgb(255, 255, 255);
+  --colorAquamarine:aquamarine;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
   color: var(--colorText);
   height: 100%;
   width: 100%;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 body .container {
   height: 100vh;
@@ -74,12 +75,16 @@ body .container header #navigation ul li a .titleNavBar {
 }
 body .container header #navigation ul :hover a {
   background-color: var(--hoverBTn);
+  box-shadow: 5px 5px 8px aquamarine;
+}
+body .container header #navigation ul :hover a .material-symbols-outlined {
+  color: aquamarine;
 }
 body .container header #navigation ul :hover a .titleNavBar {
   visibility: visible;
   opacity: 1;
   color: black;
-  transform: translateX(1.5rem) translateX(3.1rem);
+  transform: translateX(0.01rem) translateX(1rem);
 }
 body .container main {
   height: 100vh;
@@ -99,17 +104,51 @@ body .container main #Accueil {
 body .container main #Present {
   height: 100%;
   width: 100%;
+  display: flex;
 }
 body .container main #Present .imgProfil {
-  border: 1px solid greenyellow;
-  height: 10%;
-  width: 10%;
-  display: inline;
+  height: 60%;
+  width: 30%;
+  margin-top: 10%;
+  margin-left: 10%;
+  border-radius: 10% 10%;
+  background-image: url(img/myProfil.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 body .container main #Present .textProfil {
-  border: 1px solid rgb(47, 255, 224);
-  height: 50%;
+  height: 40%;
   width: 50%;
+  transform: translate(10%);
+  margin-top: 10%;
+  border-radius: 10%;
+}
+body .container main #Compet .boitefront {
+  border: 1px solid var(--colorAquamarine);
+  width: 5rem;
+  height: 5rem;
+  background-color: brown;
+  display: flex;
+  position: relative;
+}
+body .container main #Projet {
+  color: red;
+}
+body .container main #Contact h2 {
+  text-align: center;
+  border: 1px solid red;
+  margin-top: 2%;
+}
+body .container main #Contact .containerContact {
+  border: 1px solid blanchedalmond;
+  width: 100%;
+  height: 92%;
+}
+body .container main #Contact .lienContact {
+  border: 1px solid blueviolet;
+}
+body .container main #Contact .formulaire {
+  border: 1px solid yellow;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,17 @@
+// reset Css
 *,::after,::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+// Differentes Variable de couleur utilisée
 *,:root{
     --colorText:rgb(255, 255, 255);
     --colorBackground:black;
     --colorbtn:red;
-    --hoverBTn:aquamarine;
+    --hoverBTn:rgb(255, 255, 255);
+    --colorAquamarine:aquamarine;
 }
 
 
@@ -16,13 +20,11 @@ body{
     color: var(--colorText);
     height: 100%;
     width: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
     .container{
-        // border: 1px solid red;
         height: 100vh;
         display: flex;
         header{
-            // border: 1px solid rgb(38, 255, 0);
             height: 100%;
             width: 10vw;
             text-transform: uppercase;
@@ -68,17 +70,19 @@ body{
                                 visibility: hidden;
                             }
                         }
-
                     }
                     :hover{
                         a{
-                        background-color: var(--hoverBTn);
-
+                            background-color: var(--hoverBTn);
+                            box-shadow: 5px 5px 8px aquamarine;
+                            .material-symbols-outlined{
+                                color: aquamarine;
+                            }
                             .titleNavBar{
                                 visibility: visible;
                                 opacity: 1;
                                 color: black;
-                                transform: translateX(1.5rem)translateX(3.1rem);
+                                transform: translateX(0.01rem)translateX(1rem);
                             }
                         }
                     }
@@ -98,21 +102,60 @@ body{
             #Accueil{
                 height: 100%;
                 width: 100%;
-
             }
             #Present{
                 height: 100%;
                 width: 100%;
+                display: flex;
                 .imgProfil{
-                    border: 1px solid greenyellow;
-                    height: 10%;
-                    width: 10%;
-                    display: inline;
+                    height: 60%;
+                    width: 30%;
+                    margin-top: 10%;
+                    margin-left: 10%;
+                    border-radius: 10% 10%;
+                    background-image: url(img/myProfil.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
                 }
                 .textProfil{
-                    border: 1px solid rgb(47, 255, 224);
-                    height: 50%;
+                    height: 40%;
                     width: 50%;
+                    transform: translate(10%);
+                    margin-top: 10%;
+                    border-radius: 10%;
+                }
+            }
+            #Compet{
+                .boitefront{
+                    border: 1px solid var(--colorAquamarine);
+                    width: 5rem;
+                    height: 5rem;
+                    background-color: brown;
+                    display: flex;
+                    position: relative;
+
+                }
+            }
+            #Projet{
+                color: red;
+            }
+            #Contact{
+                h2{
+                    text-align: center;
+                    border: 1px solid red;
+                    margin-top: 2%;
+                }
+                .containerContact{
+                    border: 1px solid blanchedalmond;
+                    width: 100%;
+                    height: 92%;
+                }
+                .lienContact{
+                    border: 1px solid blueviolet;
+                   
+                }
+                .formulaire{
+                        border: 1px solid yellow;
                 }
             }
         }
