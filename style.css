@@ -123,13 +123,40 @@ body .container main #Present .textProfil {
   margin-top: 10%;
   border-radius: 10%;
 }
-body .container main #Compet .boitefront {
-  border: 1px solid var(--colorAquamarine);
-  width: 5rem;
-  height: 5rem;
-  background-color: brown;
+body .container main #Compet .containerCard {
+  width: 92%;
+  height: 100%;
+  transform: translateX(8rem);
   display: flex;
+  justify-content: space-evenly;
+}
+body .container main #Compet .containerCard .cardCompetence {
+  border: 1px solid var(--colorAquamarine);
+  width: 20%;
+  height: 80%;
+  background-color: brown;
   position: relative;
+  transform: translateY(15%);
+}
+body .container main #Compet .containerCard .cardCompetence h3 {
+  border: 1px solid yellow;
+  width: 100%;
+  height: 10%;
+}
+body .container main #Compet .containerCard .cardCompetence .containerList {
+  border: solid 1px blue;
+  height: 90%;
+}
+body .container main #Compet .containerCard .cardCompetence .containerList ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+body .container main #Compet .containerCard .cardCompetence .containerList ul li {
+  border: 1px solid white;
+  height: 50%;
 }
 body .container main #Projet {
   color: red;
