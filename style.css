@@ -117,11 +117,97 @@ body .container main #Present .imgProfil {
   background-repeat: no-repeat;
 }
 body .container main #Present .textProfil {
-  height: 40%;
+  height: 60%;
   width: 50%;
   transform: translate(10%);
   margin-top: 10%;
   border-radius: 10%;
+}
+body .container main #Present .textProfil .lienProfil {
+  border: 1px solid rgb(255, 0, 0);
+  margin-top: 15%;
+  height: 10%;
+  text-align: center;
+  display: flex;
+}
+body .container main #Present .textProfil .lienProfil ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  margin-left: 2rem;
+  justify-content: space-around;
+}
+body .container main #Present .textProfil .lienProfil ul li {
+  height: 100%;
+  width: 20%;
+  border: 1px solid red;
+}
+body .container main #Present .textProfil .lienProfil ul li a {
+  border-radius: 20%;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: var(--colorbtn);
+  border: 1px solid rgb(0, 255, 221);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 8px red;
+  color: var(--colorbtn);
+}
+body .container main #Present .textProfil .lienProfil ul li a .fonctionLien {
+  transform: translateY(-50%);
+  position: absolute;
+  left: 6.8rem;
+  background-color: aqua;
+  border-radius: 0.3rem;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+body .container main #Present .textProfil .lienProfil ul li button {
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgb(0, 255, 221);
+  box-shadow: 5px 5px 8px red;
+  border-radius: 20%;
+  background-color: black;
+  color: var(--colorbtn);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container main #Present .textProfil .lienProfil ul li button .fonctionLien {
+  position: absolute;
+  left: 6.8rem;
+  background-color: aqua;
+  border-radius: 0.3rem;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+body .container main #Present .textProfil .lienProfil ul :hover a {
+  background-color: var(--hoverBTn);
+  box-shadow: 5px 5px 8px aquamarine;
+}
+body .container main #Present .textProfil .lienProfil ul :hover a .fonctionLien {
+  visibility: visible;
+  opacity: 1;
+  color: black;
+  transform: translateY(0.01rem) translateY(5rem);
+}
+body .container main #Present .textProfil .lienProfil ul :hover button {
+  background-color: var(--hoverBTn);
+  box-shadow: 5px 5px 8px aquamarine;
+  color: aquamarine;
+}
+body .container main #Present .textProfil .lienProfil ul :hover button .fonctionLien {
+  visibility: visible;
+  opacity: 1;
+  color: black;
+  transform: translateY(0.01rem) translateY(5rem);
 }
 body .container main #Compet .containerCard {
   width: 92%;

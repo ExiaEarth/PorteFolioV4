@@ -116,14 +116,117 @@ body{
                     background-image: url(img/myProfil.jpg);
                     background-position: center;
                     background-repeat: no-repeat;
+                    // border: 1px solid rgb(0, 255, 8);
                 }
                 .textProfil{
-                    height: 40%;
+                    height: 60%;
                     width: 50%;
                     transform: translate(10%);
                     margin-top: 10%;
                     border-radius: 10%;
+                    // border: 1px solid rgb(0, 255, 8);
+
+                    .lienProfil{
+                        border: 1px solid rgb(255, 0, 0);
+                        margin-top: 15%;
+                        height: 10%;
+                        text-align: center;
+                        display: flex;
+                        ul{
+                            height: 100%;
+                            width: 100%;
+                            list-style: none;
+                            display: flex;
+                            // flex-direction: column;
+                            margin-left: 2rem;
+                            justify-content: space-around;
+                            li{
+                                height: 100%;
+                                width: 20%;
+                                border: 1px solid red;
+                                a{
+                                    border-radius: 20%;
+                                    height: 100%;
+                                    width: 100%;
+                                    text-decoration: none;
+                                    color:var(--colorbtn);
+                                    border: 1px solid rgb(0, 255, 221);
+                                    display: flex;                            
+                                    align-items: center;
+                                    justify-content: center;
+                                    box-shadow: 5px 5px 8px red;
+                                    color:var(--colorbtn);
+
+                                    // .material-symbols-outlined{
+                                    //     text-align: center;
+                                    //     font-size: 1.5rem;
+                                    // }
+
+                                    .fonctionLien{
+                                        transform: translateY(-50%);
+                                        position: absolute;
+                                        left: 6.8rem;
+                                        background-color: aqua;
+                                        border-radius: 0.3rem;
+                                        transition: 0.5s;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                    }
+                                }
+                                button{
+                                    height: 100%;
+                                    width: 100%;
+                                    border: 1px solid rgb(0, 255, 221);
+                                    box-shadow: 5px 5px 8px red;
+                                    border-radius: 20%;
+                                    background-color: black;
+                                    color: var(--colorbtn);
+                                    text-decoration: none;
+                                    display: flex;                            
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    .fonctionLien{
+                                        // transform: translateY(-50%);
+                                        position: absolute;
+                                        left: 6.8rem;
+                                        background-color: aqua;
+                                        border-radius: 0.3rem;
+                                        transition: 0.5s;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                    }
+                                }
+                            }
+                            :hover{
+                                a{
+                                    background-color: var(--hoverBTn);
+                                    box-shadow: 5px 5px 8px aquamarine;
+                                    .fonctionLien{
+                                        visibility: visible;
+                                        opacity: 1;
+                                        color: black;
+                                        transform: translateY(0.01rem)translateY(5rem);
+                                    }
+                                }
+                                button{
+                                    background-color: var(--hoverBTn);
+                                    box-shadow: 5px 5px 8px aquamarine;
+                                    color: aquamarine;
+
+                                    .fonctionLien{
+                                        visibility: visible;
+                                        opacity: 1;
+                                        color: black;
+                                        transform: translateY(0.01rem)translateY(5rem);
+                                    }
+                                }
+                            }
+                        }
+
+                    }
                 }
+
             }
             #Compet{
                 .containerCard{
