@@ -94,7 +94,6 @@ body .container main {
 }
 body .container main .formaDef {
   border: 1px solid red;
-  height: 100%;
   width: 100%;
 }
 body .container main #Accueil {
@@ -124,7 +123,6 @@ body .container main #Present .textProfil {
   border-radius: 10%;
 }
 body .container main #Present .textProfil .lienProfil {
-  border: 1px solid rgb(255, 0, 0);
   margin-top: 15%;
   height: 10%;
   text-align: center;
@@ -135,13 +133,11 @@ body .container main #Present .textProfil .lienProfil ul {
   width: 100%;
   list-style: none;
   display: flex;
-  margin-left: 2rem;
   justify-content: space-around;
 }
 body .container main #Present .textProfil .lienProfil ul li {
   height: 100%;
   width: 20%;
-  border: 1px solid red;
 }
 body .container main #Present .textProfil .lienProfil ul li a {
   border-radius: 20%;
@@ -157,9 +153,8 @@ body .container main #Present .textProfil .lienProfil ul li a {
   color: var(--colorbtn);
 }
 body .container main #Present .textProfil .lienProfil ul li a .fonctionLien {
-  transform: translateY(-50%);
+  transform: translateY(50%);
   position: absolute;
-  left: 6.8rem;
   background-color: aqua;
   border-radius: 0.3rem;
   transition: 0.5s;
@@ -181,7 +176,6 @@ body .container main #Present .textProfil .lienProfil ul li button {
 }
 body .container main #Present .textProfil .lienProfil ul li button .fonctionLien {
   position: absolute;
-  left: 6.8rem;
   background-color: aqua;
   border-radius: 0.3rem;
   transition: 0.5s;
@@ -196,7 +190,7 @@ body .container main #Present .textProfil .lienProfil ul :hover a .fonctionLien 
   visibility: visible;
   opacity: 1;
   color: black;
-  transform: translateY(0.01rem) translateY(5rem);
+  transform: translateY(0.01rem) translateY(-5rem);
 }
 body .container main #Present .textProfil .lienProfil ul :hover button {
   background-color: var(--hoverBTn);
@@ -207,7 +201,19 @@ body .container main #Present .textProfil .lienProfil ul :hover button .fonction
   visibility: visible;
   opacity: 1;
   color: black;
-  transform: translateY(0.01rem) translateY(5rem);
+  transform: translateY(0.01rem) translateY(-5rem);
+}
+body .container main #Present #divCv {
+  height: 30rem;
+  display: none;
+  margin-top: 1rem;
+}
+body .container main #Present #divCv embed {
+  height: 100%;
+  width: 100%;
+}
+body .container main #Compet {
+  height: 100%;
 }
 body .container main #Compet .containerCard {
   width: 92%;
@@ -242,10 +248,14 @@ body .container main #Compet .containerCard .cardCompetence .containerList ul {
 }
 body .container main #Compet .containerCard .cardCompetence .containerList ul li {
   border: 1px solid white;
-  height: 50%;
+  height: 100%;
 }
 body .container main #Projet {
+  height: 100%;
   color: red;
+}
+body .container main #Contact {
+  height: 100%;
 }
 body .container main #Contact h2 {
   text-align: center;
@@ -255,13 +265,17 @@ body .container main #Contact h2 {
 body .container main #Contact .containerContact {
   border: 1px solid blanchedalmond;
   width: 100%;
-  height: 92%;
+  height: 93%;
 }
 body .container main #Contact .lienContact {
   border: 1px solid blueviolet;
 }
 body .container main #Contact .formulaire {
   border: 1px solid yellow;
+}
+body .container main #footer {
+  height: 10%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

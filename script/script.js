@@ -1,17 +1,13 @@
-// function switchColor(){
-//     // let r=250;
-//     // let g=250;
-//     // let b=250;
-//     // document.body.style.backgroundColor="rgb("+r+","+g+","+b+")"
-//     document.body.style.backgroundColor=rgb(255, 255, 255)
-// }
 
-    // const tl=gsap.timeline();
-    // tl.fronTo(".boitefront",{opacity:1},{opacity:0})
-    const tl = gsap.timeline();
+let btn1 = document.getElementById("togg1");
+let VisNoVisi = document.getElementById("divCv");
 
-tl.from("boitefront",{duration:1,opacity:0,stagger:0.25,});
-tl.to("boitefront",{duration:0.5,y:"20%",opacity:0,stagger});
+btn1.addEventListener("click", () => {
+  if(getComputedStyle(VisNoVisi).display != "none"){
+    VisNoVisi.style.display = "none";
+  } else {
+    VisNoVisi.style.display = "block";
+  }
+})
 
-const tlSid=gsap.timeline();
-tlSid.from("")
+
