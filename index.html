@@ -9,16 +9,24 @@
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <title>porteFolio Marc Lemer</title>
 </head>
-<body>
+<body >
     <!-- conteneur de toute la page -->
     <div class="container">
         <header>
             <div class="mode-clair">
-                <button type="button" onclick="switcheColor()">
+                <button type="button" id="btnNav" onclick = "modeClair();">
                     <span class="material-symbols-outlined">
                         light_mode
                     </span>
                     <span>clair</span>
+                </button>
+            </div>
+            <div class="mode-clair">
+                <button type="button"  onclick = "modeSombre();">
+                    <span class="material-symbols-outlined">
+                        dark_mode
+                    </span>
+                    <span>sombre</span>
                 </button>
             </div>
             <nav id="navigation" class="navBar">
@@ -59,7 +67,60 @@
         <main>
             <!-- Div de la partie de page Accueil -->
             <div id="Accueil" class="formaDef">
-                <h2>ACCUEIL</h2>
+                <!-- <h1>Le porte folio de Marc Lemer</h1> -->
+                <!-- <h2 class="titlePage" id="titlePageAccueil">Accueil</h2> -->
+                <h2 class="textComplem"></h2>
+                <div class="slogan">
+                    <div class="sloganAnimation1">
+                        <div class="letter">b</div>
+                        <div class="letter">i</div>
+                        <div class="letter">e</div>
+                        <div class="letter">n</div>
+                        <div class="letter">v</div>
+                        <div class="letter">e</div>
+                        <div class="letter">n</div>
+                        <div class="letter">u</div>
+                    </div>
+                    <div class="sloganAnimation1">
+                        <div class="letter">s</div>
+                        <div class="letter">u</div>
+                        <div class="letter">r</div>
+                    </div>
+                    <div class="sloganAnimation1">
+                        <div class="letter">l</div>
+                        <div class="letter">e</div>
+                    </div>
+                    <div class="sloganAnimation1">
+                        <div class="letter">p</div>
+                        <div class="letter">o</div>
+                        <div class="letter">r</div>
+                        <div class="letter">t</div>
+                        <div class="letter">e</div>
+                        <div class="letter">f</div>
+                        <div class="letter">o</div>
+                        <div class="letter">l</div>
+                        <div class="letter">i</div>
+                        <div class="letter">o</div>
+                    </div>
+                    <div class="sloganAnimation1">
+                        <div class="letter">d</div>
+                        <div class="letter">e</div>
+                    </div>
+                    <div class="sloganAnimation1">
+                        <div class="letter">m</div>
+                        <div class="letter">a</div>
+                        <div class="letter">r</div>
+                        <div class="letter">c</div>
+                    </div>
+                    <div class="sloganAnimation1">
+                        <div class="letter">l</div>
+                        <div class="letter">e</div>
+                        <div class="letter">m</div>
+                        <div class="letter">e</div>
+                        <div class="letter">r</div>
+
+                    </div>
+                </div>
             </div>
             <!-- Div de la partie de page Presentation -->
             <div id="Present" class="formaDef">
@@ -67,7 +128,7 @@
                     <!-- <img src="img/myProfil.jpg"> -->
                 </div>
                 <div class="textProfil">
-                    Bonjour,<br><br>Je me nomme Marc Lemer et au moment ou j'écris ces lignes j'ai 26 ans.<br>J'ai décidée de commencée ma présentation avec mes année du secondaire en premier lieu.j'ai étudier a Institut technique de namur dans la section Electricien en batiment/industriel en professionnel jusqu'a la 7éme année.Sortie de cette année en 2019.<br>En 2021 j'ai décicée de changée de voie ,je me suis dirigée en premier lieu dans une formation en "découvert des métier informatique" chez Interface3namur<br><br>.L'année d'aprêt ,j'ai continuée avec une formation en "Développeur Web Javascript FullStack" toujours chez Interface3namur.En suivie de cette formation j'ai décider de ma lancée dans la branche Front-End ou je me suis inscrit a la formation professionnelle " Web designer UI&UX " chez Cepegra ou je doit encore passée l'entretien...
+                    Bonjour,<br><br>Je me nomme Marc Lemer et au moment ou j'écris ces lignes j'ai 26 ans.<br>J'ai décidée de commencée ma présentation avec mes années du secondaire en premier lieu.j'ai étudiée à L'institut technique de namur dans la section Electricien en batiment/industriel en professionnel jusqu'a la 7éme année.Sortie de cette année en 2019.<br>En 2021 j'ai décicée de changée de voie ,je me suis dirigée en premier lieu dans une formation en "découvert des métier informatique" chez Interface3namur.<br><br>L'année d'aprêt ,j'ai continuée avec une formation en "Développeur Web Javascript FullStack" toujours chez Interface3namur.En suivie de cette formation j'ai décider de ma lancée dans la branche Front-End ou je me suis inscrit a la formation professionnelle " Web designer UI&UX " chez Cepegra ou je doit encore passée l'entretien...
                     <div class="lienProfil">
                         <ul>
                             <li>
@@ -164,5 +225,7 @@
     <!-- fin de la page -->
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-<script src="script/script.js"></script>
+<script src="script/scriptPresentation.js"></script>
+<script src="script/scriptAccueil.js"></script>
+<script src="script/scripteclairage.js"></script>
 </html>

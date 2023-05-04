@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: var(--colorBackground);
+  background: black;
   color: var(--colorText);
   height: 100%;
   width: 100%;
@@ -99,6 +99,23 @@ body .container main .formaDef {
 body .container main #Accueil {
   height: 100%;
   width: 100%;
+  text-transform: uppercase;
+}
+body .container main #Accueil .slogan {
+  position: relative;
+  left: 40rem;
+  width: 30vw;
+  height: 95.5vh;
+}
+body .container main #Accueil .slogan .sloganAnimation1 {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+body .container main #Accueil .slogan .letter {
+  color: var(--colorAquamarine);
 }
 body .container main #Present {
   height: 100%;
@@ -121,6 +138,7 @@ body .container main #Present .textProfil {
   transform: translate(10%);
   margin-top: 10%;
   border-radius: 10%;
+  font-size: 1.5rem;
 }
 body .container main #Present .textProfil .lienProfil {
   margin-top: 15%;
@@ -151,6 +169,7 @@ body .container main #Present .textProfil .lienProfil ul li a {
   justify-content: center;
   box-shadow: 5px 5px 8px red;
   color: var(--colorbtn);
+  text-transform: uppercase;
 }
 body .container main #Present .textProfil .lienProfil ul li a .fonctionLien {
   transform: translateY(50%);
@@ -173,6 +192,8 @@ body .container main #Present .textProfil .lienProfil ul li button {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 body .container main #Present .textProfil .lienProfil ul li button .fonctionLien {
   position: absolute;

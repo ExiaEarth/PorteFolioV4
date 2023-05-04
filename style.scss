@@ -16,7 +16,8 @@
 
 
 body{
-    background-color: var(--colorBackground);
+    // background-color: var(--colorBackground);
+    background: black;
     color: var(--colorText);
     height: 100%;
     width: 100%;
@@ -101,6 +102,24 @@ body{
             #Accueil{
                 height: 100%;
                 width: 100%;
+                text-transform: uppercase;
+                .slogan {
+                    position: relative;
+                    left: 40rem;
+                    width:30vw;
+                    height: 95.5vh;
+                    .sloganAnimation1 {
+                        margin-top: 2.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 5rem;
+                        // border: 1px solid red;
+                    }
+                    .letter {
+                        color: var(--colorAquamarine);
+                    }
+                }
             }
             #Present{
                 height: 100%;
@@ -122,6 +141,7 @@ body{
                     transform: translate(10%);
                     margin-top: 10%;
                     border-radius: 10%;
+                    font-size: 1.5rem;
                     .lienProfil{
                         margin-top: 15%;
                         height: 10%;
@@ -148,12 +168,8 @@ body{
                                     justify-content: center;
                                     box-shadow: 5px 5px 8px red;
                                     color:var(--colorbtn);
-
-                                    // .material-symbols-outlined{
-                                    //     text-align: center;
-                                    //     font-size: 1.5rem;
-                                    // }
-
+                                    // font-size: ;
+                                    text-transform: uppercase;
                                     .fonctionLien{
                                         transform: translateY(50%);
                                         position: absolute;
@@ -176,6 +192,8 @@ body{
                                     display: flex;                            
                                     align-items: center;
                                     justify-content: center;
+                                    text-transform: uppercase;
+                                    font-size: 1.5rem;
                                     .fonctionLien{
                                         position: absolute;
                                         background-color: aqua;
