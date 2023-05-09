@@ -249,44 +249,48 @@ body .container main #Compet .containerCard {
   flex-wrap: wrap;
 }
 body .container main #Compet .containerCard .Card {
-  border: 1px solid rgb(47, 255, 234);
+  border: 1px solid rgb(0, 255, 221);
+  box-shadow: 5px 5px 8px red;
   position: relative;
   height: 10%;
   width: 20%;
-  z-index: 10;
   margin: 1.25rem 1.25rem 3.75rem;
 }
 body .container main #Compet .containerCard .Card .box {
-  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 5;
+  position: relative;
 }
 body .container main #Compet .containerCard .Card .box .titleCard {
-  border: 1px solid rgb(255, 47, 47);
   height: 100%;
   width: 100%;
   text-transform: uppercase;
   text-align: center;
+  display: flex;
   align-items: center;
 }
 body .container main #Compet .containerCard .Card .box .titleCard span {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
   color: #b10d0d;
-  border: 1px solid rgb(255, 47, 47);
 }
 body .container main #Compet .containerCard .Card .box .containerlistcard {
-  border: 1px solid rgb(255, 47, 47);
   height: 90%;
   width: 100%;
   display: none;
+  transform: translateY(-35rem);
 }
 body .container main #Compet .containerCard .Card .box .containerlistcard ul {
   height: 100%;
+  list-style: none;
 }
 body .container main #Compet .containerCard .Card .box .containerlistcard ul li {
-  border: 1px solid greenyellow;
-  height: 25%;
+  height: 20%;
   flex-wrap: wrap;
 }
 body .container main #Compet .containerCard .Card .box .containerlistcard ul li h4 {
@@ -297,11 +301,28 @@ body .container main #Compet .containerCard .Card .box .containerlistcard ul li 
 body .container main #Compet .containerCard .Card .btnCard {
   height: 100%;
   width: 20%;
-  border: 1px solid rgb(255, 47, 47);
-  transform: translateY(2rem);
+  background-color: #b10d0d;
+  transform: translateY(-1rem);
   margin-left: 40%;
+  z-index: 10;
+  position: relative;
 }
 body .container main #Compet .containerCard .Card .btnCard button {
+  height: 30%;
+  width: 100%;
+  border: 1px solid rgb(82, 255, 47);
+  text-align: center;
+  margin-top: 90%;
+}
+body .container main #Compet .containerCard .Card .btnCardClose {
+  display: none;
+  height: 100%;
+  width: 20%;
+  border: 1px solid rgb(255, 47, 47);
+  transform: translateY(-2.1rem);
+  margin-left: 60%;
+}
+body .container main #Compet .containerCard .Card .btnCardClose button {
   height: 30%;
   width: 100%;
   border: 1px solid rgb(82, 255, 47);
@@ -311,6 +332,31 @@ body .container main #Compet .containerCard .Card .btnCard button {
 body .container main #Projet {
   height: 100%;
   color: red;
+  z-index: 5;
+}
+body .container main #Projet .test1 {
+  background-color: #b10d0d;
+  height: 10rem;
+  width: 10rem;
+  z-index: 1;
+  position: relative;
+}
+body .container main #Projet .test2 {
+  background-color: aqua;
+  height: 10rem;
+  width: 10rem;
+  z-index: 5;
+  position: relative;
+  transform: translateY(1rem);
+}
+body .container main #Projet .test3 {
+  background-color: chartreuse;
+  height: 10rem;
+  width: 2rem;
+  z-index: 3;
+  position: relative;
+  border: #b10d0d 1px solid;
+  transform: translateY(-11rem);
 }
 body .container main #Contact {
   height: 100%;
