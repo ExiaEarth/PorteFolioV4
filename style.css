@@ -1,15 +1,18 @@
-*, ::after, ::before {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*, :root {
-  --colorText:rgb(255, 255, 255);
-  --colorBackground:black;
-  --colorbtn:red;
-  --hoverBTn:rgb(255, 255, 255);
-  --colorAquamarine:aquamarine;
+*,
+:root {
+  --colorText: rgb(255, 255, 255);
+  --colorBackground: black;
+  --colorbtn: red;
+  --hoverBTn: rgb(255, 255, 255);
+  --colorAquamarine: aquamarine;
 }
 
 body {
@@ -237,39 +240,73 @@ body .container main #Compet {
   height: 100%;
 }
 body .container main #Compet .containerCard {
-  width: 92%;
-  height: 100%;
-  transform: translateX(8rem);
+  border: 1px solid greenyellow;
+  height: 72%;
+  width: 100%;
+  margin-top: 15%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-body .container main #Compet .containerCard .cardCompetence {
-  border: 1px solid var(--colorAquamarine);
-  width: 20%;
-  height: 80%;
-  background-color: brown;
+body .container main #Compet .containerCard .Card {
+  border: 1px solid rgb(47, 255, 234);
   position: relative;
-  transform: translateY(15%);
-}
-body .container main #Compet .containerCard .cardCompetence h3 {
-  border: 1px solid yellow;
-  width: 100%;
   height: 10%;
+  width: 20%;
+  z-index: 10;
+  margin: 1.25rem 1.25rem 3.75rem;
 }
-body .container main #Compet .containerCard .cardCompetence .containerList {
-  border: solid 1px blue;
-  height: 90%;
-}
-body .container main #Compet .containerCard .cardCompetence .containerList ul {
+body .container main #Compet .containerCard .Card .box {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
 }
-body .container main #Compet .containerCard .cardCompetence .containerList ul li {
-  border: 1px solid white;
+body .container main #Compet .containerCard .Card .box .titleCard {
+  border: 1px solid rgb(255, 47, 47);
   height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+}
+body .container main #Compet .containerCard .Card .box .titleCard span {
+  color: #b10d0d;
+  border: 1px solid rgb(255, 47, 47);
+}
+body .container main #Compet .containerCard .Card .box .containerlistcard {
+  border: 1px solid rgb(255, 47, 47);
+  height: 90%;
+  width: 100%;
+  display: none;
+}
+body .container main #Compet .containerCard .Card .box .containerlistcard ul {
+  height: 100%;
+}
+body .container main #Compet .containerCard .Card .box .containerlistcard ul li {
+  border: 1px solid greenyellow;
+  height: 25%;
+  flex-wrap: wrap;
+}
+body .container main #Compet .containerCard .Card .box .containerlistcard ul li h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10%;
+}
+body .container main #Compet .containerCard .Card .btnCard {
+  height: 100%;
+  width: 20%;
+  border: 1px solid rgb(255, 47, 47);
+  transform: translateY(2rem);
+  margin-left: 40%;
+}
+body .container main #Compet .containerCard .Card .btnCard button {
+  height: 30%;
+  width: 100%;
+  border: 1px solid rgb(82, 255, 47);
+  text-align: center;
+  margin-top: 90%;
 }
 body .container main #Projet {
   height: 100%;

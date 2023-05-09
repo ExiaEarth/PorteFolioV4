@@ -8,6 +8,7 @@ let VisNoVisi = document.getElementById("divCv");
 btn.addEventListener("click", () => {
   if(getComputedStyle(VisNoVisi).display != "none"){
     VisNoVisi.style.display = "none";
+
   } else {
     VisNoVisi.style.display = "block";
   }
