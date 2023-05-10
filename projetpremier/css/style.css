@@ -1,0 +1,183 @@
+/* Mise en forme générale */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+main p {
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+/* Mise en place du header et de la navigation  */
+
+header {
+  color: white;
+  background-color: rgba(163, 203, 77, 0.9);
+}
+
+header div {
+  /* border: 1px solid black; */
+  height: 25vh;
+  background-image: url("../img/banner-01.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  background-position: center;
+}
+
+header nav li {
+  list-style: none;
+  margin: 12px;
+  /* display: inline-block; */
+}
+
+header nav li a {
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 7px;
+  text-decoration: none;
+}
+
+header nav ul {
+  text-align: center;
+}
+
+.actif {
+  border-bottom: 1px solid white;
+}
+
+/* Animation des hover du menu  */
+
+header nav li a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+header nav li a:hover {
+  color: rgb(186, 247, 54);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+/* Mise en place du main  */
+
+main {
+  max-width: 1024px;
+  background-color: rgb(235, 235, 235);
+  margin: 0 auto;
+  padding: 24px 18px;
+}
+
+main h1 {
+  font-family: "Lobster", sans-serif;
+  text-align: center;
+  color: #214567;
+  font-size: 2.6em;
+  font-weight: 800;
+  margin-bottom: 24px;
+  border-bottom: 1px dashed #214567;
+  padding-bottom: 24px;
+}
+
+main h2 {
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-bottom: 18px;
+  color: white;
+  background-color: #214567;
+  padding: 7px;
+}
+
+main h3 {
+  font-size: 1.6em;
+  margin-bottom: 12px;
+}
+
+main article {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+/* Mise en place des figures du main*/
+
+main figure {
+  margin-bottom: 12px;
+}
+
+main figcaption {
+  background-color: #383b3f;
+  color: rgb(242, 242, 242);
+  padding: 7px;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/* Mise en place du footer */
+footer {
+  color: rgb(217, 217, 217);
+  background-color: #383b3f;
+  padding: 24px 18px;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 1.4em;
+  color: white;
+}
+
+footer p:nth-child(2),
+footer p:nth-child(4) {
+  font-size: 0.8em;
+}
+
+footer p:nth-child(3) {
+  font-size: 1.4em;
+  color: white;
+}
+
+/* class et id  */
+
+.souligne {
+  text-decoration: underline;
+}
+
+.majuscule {
+  text-transform: uppercase;
+}
+
+/* Mise en place de la gallerie */
+
+@media screen and (min-width: 780px) {
+  header nav li {
+    display: inline-block;
+  }
+
+  #gallery figure {
+    width: 47.5%;
+  }
+
+  .flexing {
+    display: flex;
+  }
+
+  #gallery {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

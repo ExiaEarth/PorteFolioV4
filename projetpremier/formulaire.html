@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon premier site web - Les formulaires</title>
+        <meta name="description" content="Mise en forme de formulaires en HTML et CSS">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/formulaire.css">
+    </head>
+
+<body>
+    <header>
+        <div>
+            <!-- Image ajoutée via le CSS -->
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="javascript.html">Javascript</a>
+                </li>
+                <li>
+                    <a href="tableaux.html">Les tableaux</a>
+                </li>                
+                <li>
+                    <a href="formulaire.html">Les formulaires</a>
+                </li>
+                <li>
+                    <a href="https://www.interface3namur.be" target="_blank">Interface3.Namur</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Les formulaires</h1>
+        <section>
+            <article>
+                <h3>La balise input</h3>
+
+                <input type="text">
+                <input type="color">
+                <input type="file">
+                <input type="checkbox">
+                <input type="date">
+                <input type="range">
+                <input type="password">
+            </article>
+
+            <article>
+                <h3>Mise en place et en forme d'un formulaire</h3>
+
+                <form action="" method="get">
+
+                    <fieldset>
+                        <legend>Connexion</legend>
+                        <label for="user_name">Nom d'utilisateur :</label>
+                        <input type="text" name="user_name" id="user_name">
+
+                        <label for="user_pw">Mot de passe :</label>
+                        <input type="password" name="user_pw" id="user_pw">
+                    </fieldset>
+                    <input type="submit" value="Envoyer">
+                </form>
+
+            </article>
+            
+            <article>
+                <h3>Utilisation du fieldset</h3>
+                <form action="">
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <label for="userFirstName">Prénom :</label>
+                        <input type="text" name="userFirstName" id="userFirstName">
+
+                        <label for="userLastName">Nom :</label>
+                        <input type="text" name="userLastName" id="userLastName">
+
+                        <label for="userMail">Votre adresse mail :</label>
+                        <input type="mail" name="userMail" id="userMail">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Votre message</legend>
+                        <label for="userMsg">Entrez votre message ici :</label>
+                        <input type="textarea" name="userMsg" id="userMsg">
+                    </fieldset>
+
+                    <input type="submit" value="Envoyer">
+
+
+                </form>
+
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        <h2>Informations</h2>
+        <p>Site web réalisé dans le cadre de la formation</p>
+        <p><strong>Dev FullStack JS</strong></p>
+        <p><strong>Marc Lemer</strong> &copy;2022</p>
+    </footer>
+</body>
+
+</html>

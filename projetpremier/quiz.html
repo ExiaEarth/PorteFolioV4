@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Quizz !</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Quizz !</h1>
+      <a href="./javascript.html">Retour</a>
+      <section>
+        <article>
+          <h3>Q1 : Qui...?</h3>
+          <div class="bonneRep">
+            <input type="radio" name="q01" id="q0101" value="true" />
+            <label for="q0101">BSR</label>
+          </div>
+          <div>
+            <input type="radio" name="q01" id="q0102" value="false" />
+            <label for="q0102">Mino</label>
+          </div>
+          <div>
+            <input type="radio" name="q01" id="q0103" value="false" />
+            <label for="q0103">ropracteur</label>
+          </div>
+        </article>
+        <article>
+          <h3>Q2 : Qui...?</h3>
+          <div class="bonneRep">
+            <input type="radio" name="q02" id="q0201" value="true" />
+            <label for="q0201">BSR</label>
+          </div>
+          <div>
+            <input type="radio" name="q02" id="q0202" value="false" />
+            <label for="q0202">Mino</label>
+          </div>
+          <div>
+            <input type="radio" name="q02" id="q0203" value="false" />
+            <label for="q0203">ropracteur</label>
+          </div>
+        </article>
+        <input type="button" value="Résultats" onclick="resultat()" />
+
+        <p id="repResultat"></p>
+      </section>
+    </main>
+    <footer>
+      <h2>Informations</h2>
+      <p>Site web réalisé dans le cadre de la formation</p>
+      <p><strong>Dev FullStack JS</strong></p>
+      <p><strong>Marc Lemer</strong> &copy;2022</p>
+    </footer>
+    <script src="./javascript/resultat.js"></script>
+  </body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon premier site web - Les tableux</title>
+    <meta
+      name="description"
+      content="Mise en foirme de tableaux de HTML et CSS"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tableau.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <!-- Image ajoutée via le CSS -->
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="javascript.html">Javascript</a>
+          </li>
+          <li class="actif">
+            <a href="tableaux.html">Les tableaux</a>
+          </li>
+          <li>
+            <a href="formulaire.html">Les formulaires</a>
+          </li>
+          <li>
+            <a href="https://www.interface3namur.be" target="_blank"
+              >Interface3.Namur</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Les tableaux</h1>
+      <section>
+        <h2>Mise en forme de tableaux</h2>
+        <article>
+          <h3>Un tableau simple</h3>
+          <table class="bckColor">
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+            </tr>
+          </table>
+        </article>
+
+        <article>
+          <h3>Les en-têtes (th) pour un tableau en colonnes</h3>
+
+          <table class="bckColor">
+            <tr>
+              <th>Titre col 1</th>
+              <th>Titre col 2</th>
+              <th>Titre col 3</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+          </table>
+        </article>
+
+        <article>
+          <h3>Tableaux organisés en lignes</h3>
+          <table class="table1 bckColor">
+            <tr>
+              <th>Titre de ligne 1</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>Titre de ligne 2</th>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <th>Titre de ligne 3</th>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <th>Titre de ligne 4</th>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+            </tr>
+          </table>
+        </article>
+
+        <article>
+          <h3>La propriété border-collapse</h3>
+
+          <table class="table2 bckColor">
+            <tr>
+              <th>Titre col1</th>
+              <th>Titre col2</th>
+              <th>Titre col3</th>
+              <th>Titre col4</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+            </tr>
+          </table>
+        </article>
+
+        <article>
+          <h3>tableau organisé en lignes et en colonnes</h3>
+
+          <table class="table3 bckColor">
+            <tr>
+              <th></th>
+              <th scope="col">Colonne 1</th>
+              <th scope="col">Colonne 2</th>
+              <th scope="col">Colonne 3</th>
+            </tr>
+            <tr>
+              <th scope="row">Ligne 1</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th scope="row">Ligne 2</th>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <th scope="row">Ligne 3</th>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+          </table>
+        </article>
+
+        <article>
+          <h3>Les séparations thead, tbody et tfoot</h3>
+
+          <table class="bckColor">
+            <thead>
+              <tr>
+                <th>Nom de l'employé</th>
+                <th>Salaire</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Depp</td>
+                <td>1800</td>
+              </tr>
+              <tr>
+                <td>Wick</td>
+                <td>1850</td>
+              </tr>
+              <tr>
+                <td>Dupont</td>
+                <td>1825</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Total</th>
+                <td>5475</td>
+              </tr>
+            </tfoot>
+          </table>
+        </article>
+
+        <article>
+          <h3>La fusion des cellules</h3>
+          <table class="bckColor">
+            <caption>
+              Fusion des cellules
+            </caption>
+            <tr>
+              <th>Col 1</th>
+              <th>Col 2</th>
+              <th>Col 3</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td colspan="2">4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>7</td>
+              <td rowspan="2">8</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>10</td>
+            </tr>
+          </table>
+        </article>
+
+        <article>
+          <h3>Regroupement de colonnes avec colgroup et col</h3>
+          <table class="table1">
+            <caption>
+              Les vacances
+            </caption>
+            <colgroup>
+              <col />
+              <col span="2" class="vacances" />
+            </colgroup>
+            <tr>
+              <th>Juin</th>
+              <th>Juillet</th>
+              <th>Aout</th>
+              <th>Septembre</th>
+            </tr>
+            <tr>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+            </tr>
+            <tr>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+            </tr>
+            <tr>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+              <td>x</td>
+            </tr>
+          </table>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h2>Informations</h2>
+      <p>Site web réalisé dans le cadre de la formation</p>
+      <p><strong>Dev FullStack JS</strong></p>
+      <p><strong>Marc Lemer</strong> &copy;2022</p>
+    </footer>
+  </body>
+</html>

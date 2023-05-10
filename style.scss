@@ -15,10 +15,10 @@
   --colorbtn: red;
   --hoverBTn: rgb(255, 255, 255);
   --colorAquamarine: aquamarine;
+  --colorCardProjet: rgb(43, 43, 42);
 }
 
 body {
-  // background-color: var(--colorBackground);
   background: black;
   color: var(--colorText);
   height: 100%;
@@ -98,7 +98,7 @@ body {
       z-index: 0;
       overflow-y: scroll;
       .formaDef {
-        border: 1px solid red;
+        // border: 1px solid red;
         width: 100%;
       }
       #Accueil {
@@ -116,7 +116,6 @@ body {
             justify-content: center;
             align-items: center;
             font-size: 5rem;
-            // border: 1px solid red;
           }
           .letter {
             color: var(--colorAquamarine);
@@ -170,7 +169,6 @@ body {
                   justify-content: center;
                   box-shadow: 5px 5px 8px red;
                   color: var(--colorbtn);
-                  // font-size: ;
                   text-transform: uppercase;
                   .fonctionLien {
                     transform: translateY(50%);
@@ -221,7 +219,6 @@ body {
                   background-color: var(--hoverBTn);
                   box-shadow: 5px 5px 8px aquamarine;
                   color: aquamarine;
-
                   .fonctionLien {
                     visibility: visible;
                     opacity: 1;
@@ -234,10 +231,8 @@ body {
           }
         }
         #divCv {
-          // border: 1px solid blueviolet;
           height: 30rem;
           display: none;
-          // display: block;
           margin-top: 1rem;
           embed {
             height: 100%;
@@ -247,105 +242,86 @@ body {
       }
       #Compet {
         height: 100%;
-        .containerCard{
-          border: 1px solid greenyellow;
+        .containerCard {
           height: 72%;
           width: 100%;
           margin-top: 15%;
           display: flex;
           justify-content: space-around;
           flex-wrap: wrap;
-          .Card{
+          .Card {
             border: 1px solid rgb(0, 255, 221);
             box-shadow: 5px 5px 8px red;
             position: relative;
             height: 10%;
             width: 20%;
-            // z-index: 1;
             margin: 1.25rem 1.25rem 3.75rem;
-
-            .box{    
-              // position: absolute;
+            .box {
               top: 0;
               left: 0;
               height: 100%;
               width: 100%;
               z-index: 5;
               position: relative;
-              .titleCard{
-                // background-color: aliceblue;
-                // border: 1px solid rgb(203, 198, 198);
+              .titleCard {
                 height: 100%;
                 width: 100%;
                 text-transform: uppercase;
                 text-align: center;
                 display: flex;
                 align-items: center;
-                span{
+                span {
                   text-align: center;
                   height: 100%;
                   width: 100%;
                   font-size: 1.3rem;
                   color: #b10d0d;
-                  // border: 1px solid rgb(47, 85, 255);
                 }
               }
-              .containerlistcard{
-                // border: 1px solid rgb(255, 47, 47);
+              .containerlistcard {
                 height: 90%;
                 width: 100%;
                 display: none;
-                // display: flex;
                 transform: translateY(-35rem);
-                ul{
+                ul {
                   height: 100%;
                   list-style: none;
-                  li{
-                    // border: 1px solid greenyellow;
+                  li {
                     height: 20%;
                     flex-wrap: wrap;
-                    h4{
-                        text-transform: uppercase;
-                        text-align: center;
-                        margin-top: 10%;
+                    h4 {
+                      text-transform: uppercase;
+                      text-align: center;
+                      margin-top: 10%;
                     }
                   }
                 }
               }
             }
-            .btnCard{
-                      height: 100%;
-                      width: 20%;
-                      // border: 1px solid rgb(255, 47, 47);
-                      background-color: #b10d0d;
-                      transform: translateY(-1rem);
-                      margin-left: 40%;
-                      z-index: 10;
-                      position: relative;
-                      button{
-                          height: 30%;
-                          width: 100%;
-                          border: 1px solid rgb(82, 255, 47);
-                          text-align: center;
-                          margin-top: 90%;
-                      }
-
+            .btnCard {
+              height: 100%;
+              width: 20%;
+              transform: translateY(0.5rem);
+              margin-left: 10%;
+              position: relative;
+              button {
+                height: 30%;
+                width: 100%;
+                text-align: center;
+              }
             }
-            .btnCardClose{
-                    display: none;
-                    height: 100%;
-                    width: 20%;
-                    border: 1px solid rgb(255, 47, 47);
-                    transform: translateY(-2.1rem);
-                    margin-left: 60%;
-                    button{
-                        height: 30%;
-                        width: 100%;
-                        border: 1px solid rgb(82, 255, 47);
-                        text-align: center;
-                        margin-top: 90%;
-                    }
-
+            .btnCardClose {
+              display: none;
+              width: 20%;
+              transform: translateY(-7.157rem);
+              margin-left: 70%;
+              button {
+                height: 30%;
+                width: 100%;
+                // border: 1px solid rgb(82, 255, 47);
+                text-align: center;
+                // margin-top: 90%;
+              }
             }
           }
         }
@@ -354,30 +330,60 @@ body {
         height: 100%;
         color: red;
         z-index: 5;
-        .test1{
-          background-color: #b10d0d;
-          height: 10rem;
-          width: 10rem;
-          z-index: 1;
-          position: relative;
+        .containertitleProjet {
+          border: 1px solid greenyellow;
+          height: 5%;
+          text-align: center;
+          h2 {
+            margin-top: 0.5rem;
+          }
         }
-        .test2{
-          background-color: aqua;
-          height: 10rem;
-          width: 10rem;
-          z-index: 5;
-          // position: absolute;
-          position: relative;
-          transform: translateY(1rem);
-        }
-        .test3{
-          background-color: chartreuse;
-          height: 10rem;
-          width: 2rem;
-          z-index:3;
-          position: relative;
-          border: #b10d0d 1px solid;
-          transform: translateY(-11rem);
+        .containerProjet {
+          border: 1px solid rgb(47, 255, 227);
+          height: 95%;
+          width: 100%;
+          // align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          overflow-y: scroll;
+
+          .projet {
+            border: #b10d0d solid 1px;
+            height: 60%;
+            width: 20%;
+            position: relative;
+            z-index: 10;
+            background-color: var(--colorCardProjet);
+            margin-top: 2%;
+            margin-left: 2%;
+            .header {
+              border: #b10d0d solid 1px;
+              // transform: translateY(-1.5rem);
+              background-color: darkgrey;
+            }
+            .main {
+              border: #0db128 solid 1px;
+              .footer {
+                border: #0db1a6 solid 1px;
+              }
+            }
+          }
+          .projet:nth-child(1) {
+            background-image: url(img/Mon\ premier\ site\ web.png);
+            background-repeat: no-repeat;
+            background-size: 20vw auto;
+          }
+          .projet:nth-child(2) {
+            background-image: url(img/React_AppFinFormation.png);
+            background-repeat: no-repeat;
+            background-size: 22vw auto;
+          }
+          .projet:nth-child(3) {
+            background-image: url(img/porteFolio\ Marc\ Lemer.png);
+            background-repeat: no-repeat;
+            background-size: 18vw auto;
+          }
         }
       }
       #Contact {

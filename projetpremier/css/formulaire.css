@@ -1,0 +1,68 @@
+input{
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #ebebeb;
+    border: none;
+    border-bottom: 1px solid #214567;
+
+}
+
+fieldset input{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2em;
+    color: #214567;
+}
+
+input:focus{
+    outline: none;
+    background-color: rgba(33, 69, 103, .2);
+}
+
+form{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: #dfe1e4;
+}
+
+fieldset{
+    padding: 25px;
+    padding-bottom: 50px;
+    color: #214567;
+    font-weight: bolder;
+    border-color: 0.5px solid #214567;
+    background-color: rgb(230, 230, 230);
+}
+
+legend{
+    font-size: 1.4em;
+    padding: 5px;
+    font-weight: 100;
+    color: rgb(135, 135, 135);
+}
+
+label{
+    color:  rgb(50, 50, 50);
+    font-weight: 400;
+}
+
+input[type="submit"]{
+    background-color: #214567;
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid #214567;
+    color: rgb(225, 225, 225);
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+input[type="submit"]:hover{
+    
+    background-color: #3b7fc0;
+    color: white;
+}
+

@@ -1,0 +1,67 @@
+/* Mise en place des boutons */
+button,
+input[type="button"],
+input[type="submit"] {
+  padding: 5px;
+  margin: 5px 0;
+  background-color: #377ab8;
+  border: 1px solid #214567;
+  color: white;
+  font-weight: lighter;
+  display: block;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #449aea;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin: 5px 0;
+  display: block;
+}
+
+.exoGuide {
+  padding: 15px;
+  margin: 5px;
+  background-color: #377ab8;
+  color: white;
+  width: 50%;
+  text-align: center;
+  transform: translateX(150px);
+  transition: 0.5s;
+}
+
+.labelRadio {
+  display: inline-block;
+}
+
+#reponseBonjour {
+  text-align: center;
+  border: 1px solid rgb(79, 133, 135);
+  padding: 15px;
+  background-color: cadetblue;
+  color: white;
+  font-weight: 600;
+}
+
+/* Mise en forme table multiplication */
+#reptableMulti {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tableMulti {
+  border: 1px solid rgb(200, 200, 200);
+  width: 30%;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: rgb(220, 220, 220);
+}
+
+.tableMulti h4 {
+  text-align: center;
+  margin-bottom: 1em;
+}

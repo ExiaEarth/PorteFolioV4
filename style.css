@@ -13,6 +13,7 @@
   --colorbtn: red;
   --hoverBTn: rgb(255, 255, 255);
   --colorAquamarine: aquamarine;
+  --colorCardProjet: rgb(43, 43, 42);
 }
 
 body {
@@ -96,7 +97,6 @@ body .container main {
   overflow-y: scroll;
 }
 body .container main .formaDef {
-  border: 1px solid red;
   width: 100%;
 }
 body .container main #Accueil {
@@ -240,7 +240,6 @@ body .container main #Compet {
   height: 100%;
 }
 body .container main #Compet .containerCard {
-  border: 1px solid greenyellow;
   height: 72%;
   width: 100%;
   margin-top: 15%;
@@ -301,62 +300,82 @@ body .container main #Compet .containerCard .Card .box .containerlistcard ul li 
 body .container main #Compet .containerCard .Card .btnCard {
   height: 100%;
   width: 20%;
-  background-color: #b10d0d;
-  transform: translateY(-1rem);
-  margin-left: 40%;
-  z-index: 10;
+  transform: translateY(0.5rem);
+  margin-left: 10%;
   position: relative;
 }
 body .container main #Compet .containerCard .Card .btnCard button {
   height: 30%;
   width: 100%;
-  border: 1px solid rgb(82, 255, 47);
   text-align: center;
-  margin-top: 90%;
 }
 body .container main #Compet .containerCard .Card .btnCardClose {
   display: none;
-  height: 100%;
   width: 20%;
-  border: 1px solid rgb(255, 47, 47);
-  transform: translateY(-2.1rem);
-  margin-left: 60%;
+  transform: translateY(-7.157rem);
+  margin-left: 70%;
 }
 body .container main #Compet .containerCard .Card .btnCardClose button {
   height: 30%;
   width: 100%;
-  border: 1px solid rgb(82, 255, 47);
   text-align: center;
-  margin-top: 90%;
 }
 body .container main #Projet {
   height: 100%;
   color: red;
   z-index: 5;
 }
-body .container main #Projet .test1 {
-  background-color: #b10d0d;
-  height: 10rem;
-  width: 10rem;
-  z-index: 1;
-  position: relative;
+body .container main #Projet .containertitleProjet {
+  border: 1px solid greenyellow;
+  height: 5%;
+  text-align: center;
 }
-body .container main #Projet .test2 {
-  background-color: aqua;
-  height: 10rem;
-  width: 10rem;
-  z-index: 5;
-  position: relative;
-  transform: translateY(1rem);
+body .container main #Projet .containertitleProjet h2 {
+  margin-top: 0.5rem;
 }
-body .container main #Projet .test3 {
-  background-color: chartreuse;
-  height: 10rem;
-  width: 2rem;
-  z-index: 3;
+body .container main #Projet .containerProjet {
+  border: 1px solid rgb(47, 255, 227);
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: scroll;
+}
+body .container main #Projet .containerProjet .projet {
+  border: #b10d0d solid 1px;
+  height: 60%;
+  width: 20%;
   position: relative;
-  border: #b10d0d 1px solid;
-  transform: translateY(-11rem);
+  z-index: 10;
+  background-color: var(--colorCardProjet);
+  margin-top: 2%;
+  margin-left: 2%;
+}
+body .container main #Projet .containerProjet .projet .header {
+  border: #b10d0d solid 1px;
+  background-color: darkgrey;
+}
+body .container main #Projet .containerProjet .projet .main {
+  border: #0db128 solid 1px;
+}
+body .container main #Projet .containerProjet .projet .main .footer {
+  border: #0db1a6 solid 1px;
+}
+body .container main #Projet .containerProjet .projet:nth-child(1) {
+  background-image: url(img/Mon\ premier\ site\ web.png);
+  background-repeat: no-repeat;
+  background-size: 20vw auto;
+}
+body .container main #Projet .containerProjet .projet:nth-child(2) {
+  background-image: url(img/React_AppFinFormation.png);
+  background-repeat: no-repeat;
+  background-size: 22vw auto;
+}
+body .container main #Projet .containerProjet .projet:nth-child(3) {
+  background-image: url(img/porteFolio\ Marc\ Lemer.png);
+  background-repeat: no-repeat;
+  background-size: 18vw auto;
 }
 body .container main #Contact {
   height: 100%;
