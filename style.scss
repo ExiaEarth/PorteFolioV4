@@ -98,7 +98,6 @@ body {
       z-index: 0;
       overflow-y: scroll;
       .formaDef {
-        // border: 1px solid red;
         width: 100%;
       }
       #Accueil {
@@ -331,7 +330,6 @@ body {
         color: red;
         z-index: 5;
         .containertitleProjet {
-          border: 1px solid greenyellow;
           height: 5%;
           text-align: center;
           h2 {
@@ -339,17 +337,16 @@ body {
           }
         }
         .containerProjet {
-          border: 1px solid rgb(47, 255, 227);
           height: 95%;
           width: 100%;
-          // align-items: center;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           overflow-y: scroll;
-
           .projet {
-            border: #b10d0d solid 1px;
+            border: var(--colorAquamarine) solid 3px;
+            box-shadow: 5px 5px 8px red;
+            border-radius: 1%;
             height: 60%;
             width: 20%;
             position: relative;
@@ -358,14 +355,33 @@ body {
             margin-top: 2%;
             margin-left: 2%;
             .header {
-              border: #b10d0d solid 1px;
-              // transform: translateY(-1.5rem);
               background-color: darkgrey;
+              color: white;
+              transform: translateX(12.5rem);
+              width: 40%;
             }
             .main {
-              border: #0db128 solid 1px;
-              .footer {
-                border: #0db1a6 solid 1px;
+              height: 96%;
+              background-color: black;
+              opacity: 0.6;
+              color: white;
+              .containerData {
+                h3 {
+                  text-align: center;
+                  text-transform: uppercase;
+                }
+                p {
+                  display: flex;
+                  transform: translateY(12rem);
+                  font-size: 1.5rem;
+                }
+              }
+            }
+            .footer {
+              transform: translateY(0.5rem);
+              color: white;
+              a {
+                color: white;
               }
             }
           }
@@ -387,7 +403,7 @@ body {
         }
       }
       #Contact {
-        height: 100%;
+        height: 50%;
 
         h2 {
           text-align: center;
@@ -401,9 +417,20 @@ body {
         }
         .lienContact {
           border: 1px solid blueviolet;
-        }
-        .formulaire {
-          border: 1px solid yellow;
+          height: 100%;
+          width: 100%;
+          ul {
+            border: 1px solid rgb(61, 226, 43);
+            height: 100%;
+            li {
+              border: 1px solid rgb(226, 43, 43);
+              .test1 {
+                color: #b10d0d;
+                height: 1%;
+                width: 5%;
+              }
+            }
+          }
         }
       }
       #footer {

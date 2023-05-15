@@ -326,7 +326,6 @@ body .container main #Projet {
   z-index: 5;
 }
 body .container main #Projet .containertitleProjet {
-  border: 1px solid greenyellow;
   height: 5%;
   text-align: center;
 }
@@ -334,7 +333,6 @@ body .container main #Projet .containertitleProjet h2 {
   margin-top: 0.5rem;
 }
 body .container main #Projet .containerProjet {
-  border: 1px solid rgb(47, 255, 227);
   height: 95%;
   width: 100%;
   display: flex;
@@ -343,7 +341,9 @@ body .container main #Projet .containerProjet {
   overflow-y: scroll;
 }
 body .container main #Projet .containerProjet .projet {
-  border: #b10d0d solid 1px;
+  border: var(--colorAquamarine) solid 3px;
+  box-shadow: 5px 5px 8px red;
+  border-radius: 1%;
   height: 60%;
   width: 20%;
   position: relative;
@@ -353,14 +353,32 @@ body .container main #Projet .containerProjet .projet {
   margin-left: 2%;
 }
 body .container main #Projet .containerProjet .projet .header {
-  border: #b10d0d solid 1px;
   background-color: darkgrey;
+  color: white;
+  transform: translateX(12.5rem);
+  width: 40%;
 }
 body .container main #Projet .containerProjet .projet .main {
-  border: #0db128 solid 1px;
+  height: 96%;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
 }
-body .container main #Projet .containerProjet .projet .main .footer {
-  border: #0db1a6 solid 1px;
+body .container main #Projet .containerProjet .projet .main .containerData h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+body .container main #Projet .containerProjet .projet .main .containerData p {
+  display: flex;
+  transform: translateY(12rem);
+  font-size: 1.5rem;
+}
+body .container main #Projet .containerProjet .projet .footer {
+  transform: translateY(0.5rem);
+  color: white;
+}
+body .container main #Projet .containerProjet .projet .footer a {
+  color: white;
 }
 body .container main #Projet .containerProjet .projet:nth-child(1) {
   background-image: url(img/Mon\ premier\ site\ web.png);
@@ -378,7 +396,7 @@ body .container main #Projet .containerProjet .projet:nth-child(3) {
   background-size: 18vw auto;
 }
 body .container main #Contact {
-  height: 100%;
+  height: 50%;
 }
 body .container main #Contact h2 {
   text-align: center;
@@ -392,9 +410,20 @@ body .container main #Contact .containerContact {
 }
 body .container main #Contact .lienContact {
   border: 1px solid blueviolet;
+  height: 100%;
+  width: 100%;
 }
-body .container main #Contact .formulaire {
-  border: 1px solid yellow;
+body .container main #Contact .lienContact ul {
+  border: 1px solid rgb(61, 226, 43);
+  height: 100%;
+}
+body .container main #Contact .lienContact ul li {
+  border: 1px solid rgb(226, 43, 43);
+}
+body .container main #Contact .lienContact ul li .test1 {
+  color: #b10d0d;
+  height: 1%;
+  width: 5%;
 }
 body .container main #footer {
   height: 10%;
