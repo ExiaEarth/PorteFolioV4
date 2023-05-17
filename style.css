@@ -400,30 +400,35 @@ body .container main #Contact {
 }
 body .container main #Contact h2 {
   text-align: center;
-  border: 1px solid red;
   margin-top: 2%;
 }
 body .container main #Contact .containerContact {
-  border: 1px solid blanchedalmond;
   width: 100%;
   height: 93%;
 }
 body .container main #Contact .lienContact {
-  border: 1px solid blueviolet;
   height: 100%;
   width: 100%;
 }
 body .container main #Contact .lienContact ul {
-  border: 1px solid rgb(61, 226, 43);
-  height: 100%;
+  height: 92%;
+  display: flex;
+  margin-top: 2rem;
 }
 body .container main #Contact .lienContact ul li {
-  border: 1px solid rgb(226, 43, 43);
+  height: 50%;
+  width: 30%;
 }
 body .container main #Contact .lienContact ul li .test1 {
   color: #b10d0d;
-  height: 1%;
-  width: 5%;
+  height: 80%;
+  width: 40%;
+}
+body .container main #Contact .lienContact ul li a {
+  color: aliceblue;
+  display: flex;
+  transform: translateY(-5rem) translateX(11rem);
+  width: 25%;
 }
 body .container main #footer {
   height: 10%;
