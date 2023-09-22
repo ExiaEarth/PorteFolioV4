@@ -16,6 +16,15 @@
   --colorCardProjet: rgb(43, 43, 42);
 }
 
+@media screen and (max-width: 1080px) {
+  p {
+    color: red;
+  }
+  .container {
+    width: 1080px;
+    overflow: auto;
+  }
+}
 body {
   background: black;
   color: var(--colorText);
@@ -338,7 +347,6 @@ body .container main #Projet .containerProjet {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  overflow-y: scroll;
 }
 body .container main #Projet .containerProjet .projet {
   border: var(--colorAquamarine) solid 3px;
@@ -409,17 +417,21 @@ body .container main #Contact .containerContact {
 body .container main #Contact .lienContact {
   height: 100%;
   width: 100%;
+  text-align: center;
 }
 body .container main #Contact .lienContact ul {
   height: 92%;
   display: flex;
   margin-top: 2rem;
+  justify-content: center;
 }
 body .container main #Contact .lienContact ul li {
   height: 50%;
-  width: 30%;
+  width: 25%;
+  list-style: none;
+  margin-top: 5rem;
 }
-body .container main #Contact .lienContact ul li .test1 {
+body .container main #Contact .lienContact ul li .imgContact {
   color: #b10d0d;
   height: 80%;
   width: 40%;
@@ -427,7 +439,7 @@ body .container main #Contact .lienContact ul li .test1 {
 body .container main #Contact .lienContact ul li a {
   color: aliceblue;
   display: flex;
-  transform: translateY(-5rem) translateX(11rem);
+  transform: translateY(2rem) translateX(11rem);
   width: 25%;
 }
 body .container main #footer {

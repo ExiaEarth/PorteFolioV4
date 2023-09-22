@@ -17,6 +17,15 @@
   --colorAquamarine: aquamarine;
   --colorCardProjet: rgb(43, 43, 42);
 }
+@media screen and (max-width: 1080px) {
+  p {
+    color: red;
+  }
+  .container {
+    width: 1080px;
+    overflow: auto;
+  }
+}
 
 body {
   background: black;
@@ -342,7 +351,7 @@ body {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          overflow-y: scroll;
+          // overflow-y: scroll;
           .projet {
             border: var(--colorAquamarine) solid 3px;
             box-shadow: 5px 5px 8px red;
@@ -415,16 +424,23 @@ body {
         .lienContact {
           height: 100%;
           width: 100%;
+          // align-items: center;
+          text-align: center;
+          // border: 1px solid red;
           ul {
             height: 92%;
             display: flex;
             margin-top: 2rem;
+            // border: 1px solid rgb(0, 51, 255);
+            justify-content: center;
 
             li {
               height: 50%;
-              width: 30%;
-
-              .test1 {
+              width: 25%;
+              list-style: none;
+              // border: 1px solid rgb(9, 255, 0);
+              margin-top: 5rem;
+              .imgContact {
                 color: #b10d0d;
                 height: 80%;
                 width: 40%;
@@ -432,7 +448,7 @@ body {
               a {
                 color: aliceblue;
                 display: flex;
-                transform: translateY(-5rem) translateX(11rem);
+                transform: translateY(2rem) translateX(11rem);
                 width: 25%;
               }
             }
