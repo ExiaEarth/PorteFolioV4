@@ -183,15 +183,6 @@ body .container main #Present .textProfil .lienProfil ul li a {
   color: var(--colorbtn);
   text-transform: uppercase;
 }
-body .container main #Present .textProfil .lienProfil ul li a .fonctionLien {
-  transform: translateY(50%);
-  position: absolute;
-  background-color: aqua;
-  border-radius: 0.3rem;
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden;
-}
 body .container main #Present .textProfil .lienProfil ul li button {
   height: 100%;
   width: 100%;
@@ -215,6 +206,10 @@ body .container main #Present .textProfil .lienProfil ul li button .fonctionLien
   opacity: 0;
   visibility: hidden;
 }
+body .container main #Present .textProfil .lienProfil ul li .divbtncv {
+  height: 100%;
+  width: 100%;
+}
 body .container main #Present .textProfil .lienProfil ul :hover a {
   background-color: var(--hoverBTn);
   box-shadow: 5px 5px 8px aquamarine;
@@ -230,14 +225,8 @@ body .container main #Present .textProfil .lienProfil ul :hover button {
   box-shadow: 5px 5px 8px aquamarine;
   color: aquamarine;
 }
-body .container main #Present .textProfil .lienProfil ul :hover button .fonctionLien {
-  visibility: visible;
-  opacity: 1;
-  color: black;
-  transform: translateY(0.01rem) translateY(-5rem);
-}
 body .container main #Present #divCv {
-  height: 30rem;
+  height: 28rem;
   display: none;
   margin-top: 1rem;
 }
@@ -383,10 +372,10 @@ body .container main #Projet .containerProjet .projet .main .containerData p {
 }
 body .container main #Projet .containerProjet .projet .footer {
   transform: translateY(0.5rem);
-  color: white;
+  color: var(--colorAquamarine);
 }
 body .container main #Projet .containerProjet .projet .footer a {
-  color: white;
+  color: var(--colorAquamarine);
 }
 body .container main #Projet .containerProjet .projet:nth-child(1) {
   background-image: url(img/Mon\ premier\ site\ web.png);
@@ -445,6 +434,15 @@ body .container main #Contact .lienContact ul li a {
 body .container main #footer {
   height: 10%;
   text-align: center;
+}
+body .container main .fonctionLien {
+  transform: translateY(50%);
+  position: absolute;
+  background-color: aqua;
+  border-radius: 0.3rem;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

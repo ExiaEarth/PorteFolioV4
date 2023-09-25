@@ -178,15 +178,6 @@ body {
                   box-shadow: 5px 5px 8px red;
                   color: var(--colorbtn);
                   text-transform: uppercase;
-                  .fonctionLien {
-                    transform: translateY(50%);
-                    position: absolute;
-                    background-color: aqua;
-                    border-radius: 0.3rem;
-                    transition: 0.5s;
-                    opacity: 0;
-                    visibility: hidden;
-                  }
                 }
                 button {
                   height: 100%;
@@ -211,6 +202,11 @@ body {
                     visibility: hidden;
                   }
                 }
+                .divbtncv {
+                  height: 100%;
+                  width: 100%;
+                  // background-color: black;
+                }
               }
               :hover {
                 a {
@@ -227,19 +223,14 @@ body {
                   background-color: var(--hoverBTn);
                   box-shadow: 5px 5px 8px aquamarine;
                   color: aquamarine;
-                  .fonctionLien {
-                    visibility: visible;
-                    opacity: 1;
-                    color: black;
-                    transform: translateY(0.01rem) translateY(-5rem);
-                  }
                 }
               }
             }
           }
         }
         #divCv {
-          height: 30rem;
+          // border: #b10d0d solid 1px;
+          height: 28rem;
           display: none;
           margin-top: 1rem;
           embed {
@@ -388,9 +379,10 @@ body {
             }
             .footer {
               transform: translateY(0.5rem);
-              color: white;
+              color: var(--colorAquamarine);
               a {
-                color: white;
+                // color: white;
+                color: var(--colorAquamarine);
               }
             }
           }
@@ -458,6 +450,15 @@ body {
       #footer {
         height: 10%;
         text-align: center;
+      }
+      .fonctionLien {
+        transform: translateY(50%);
+        position: absolute;
+        background-color: aqua;
+        border-radius: 0.3rem;
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
       }
     }
   }
